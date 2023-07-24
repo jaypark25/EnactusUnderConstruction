@@ -1,0 +1,148 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color : rgb(244, 244, 244);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    height : 100vh;
+    width : 100vw;
+}
+
+#constructionGifArea {
+    width : 100%;
+    display : flex;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+}
+
+#gifContainer {
+    position : relative;
+    width : 90vmin;
+    height : 70vmin;
+    margin-bottom : 5vmin;
+
+}
+
+#mainContent {
+    display : flex;
+    justify-content : center;
+    flex-direction : column;
+    height : 100%;
+}
+
+#backgroundBlob {
+    width : 90vmin;
+    height : 70vmin;
+    opacity : 0.8;
+    object-fit : cover;
+    grid-column: 1;
+    grid-row: 1;
+    position : absolute;
+    margin : auto;
+}
+
+
+#enactusGif {
+    width : 60vmin;
+    height : 60vmin;
+    top : 5vmin;
+    left : 15vmin;
+    object-fit : cover;
+    position : absolute;
+}
+
+#constructionText {
+    font-size : 4vmin;
+    font-weight : 600;
+    width : 100%;
+    text-align : center;
+    color : rgb(44, 44, 44);
+    padding : 5px;
+}
+
+#emailText {
+    font-size : 2vmin;
+    font-weight : 400;
+    text-align : center;
+    margin-bottom : 3vmin;
+    padding : 5px;
+    color : rgb(44, 44, 44);
+}
+
+header {
+    height : 7vmin;
+    display : flex;
+    background-color : #7d8cff;
+    width : 100%;
+    justify-content : flex-start;
+}
+ 
+#logo {
+    height : 80%;
+    object-fit : cover;
+    margin-left : 25px;
+    margin-top : 5px;
+}
+
+
+
+@media (max-width: 700px) {
+    #emailText {
+        font-size : 1.5vmin;
+        font-weight : 400;
+    }
+
+    #constructionText {
+        font-size : 3.5vmin;
+        font-weight : 600;
+    }
+  }
